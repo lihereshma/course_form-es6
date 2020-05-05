@@ -104,51 +104,138 @@ li {
   margin: 0 auto;
 }
 /*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
-
-/*=================================
   main styling starts here
 =================================*/
+body { background-color: #ccc; }
+.edit { color: green; }
+.delete { color: red; }
+.edit:hover, .delete:hover {  color: #7c7c7c; }
+.result li { padding: 20px; }
 
+.result {
+  width: 70%;
+  margin: 30px auto;
+}
 
+.result ul {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;  
+  background-color: #fff;
+  box-shadow: 5px 10px 18px #888;
+}
 
+.alert {
+  width: 50%;
+  padding: 30px; 
+  border: 1px solid;
+  margin: 0 auto;
+}
 
+.alert-success {
+  border-color: #4ca62b;
+  background-color: #c5f3b4;
+}
 
+.alert-danger {
+  border-color: #e0170c;
+  background-color: #fad6d4; 
+}
 
+.alert-info {
+  border-color: #000;
+  background-color: #888; 
+}
 
+form {
+  width: 50%;
+  box-sizing: border-box; 
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
 
+h1 {
+  margin: 20px 0;
+  font-size: 20px; 
+  text-align: center;
+  text-transform: capitalize;
+}
+
+form > div { 
+  width: 100%;
+  margin: 10px 0;
+}
+
+.form_input div{
+  border: 2px solid #b36561;
+  border-radius: 5px;
+  display: flex;
+}
+
+input[type="text"], input[type="button"] { 
+  padding: 10px;
+  outline: none;
+}
+
+input[type="text"] {
+  width: 100%;
+  border: none;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.customer_icon, .course_icon, .author_icon {
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.customer_icon::before {  
+  content: "\f007"; 
+  padding: 12px 14px;
+}
+
+.course_icon::before { 
+  content: "\f15c";
+  padding: 12px 13px;
+}
+
+.author_icon::before {  
+  content: "\f2bd";
+  padding: 12px 12px;
+}
+
+.customer_icon::before,.course_icon::before, .author_icon::before {
+  float: left;
+  background-color: #b36561;
+  color: #fff;
+  font-family: FontAwesome;
+  text-indent: 0;
+}
+
+input[type="button"] {
+  width: 100%;
+  border: 2px solid #7c7c7c;
+  border-radius: 5px; 
+  background-color: #fff;
+  color: #7c7c7c;
+  font: bold 15px 'Arial';
+  transition: all 0.5s ease;
+}
+
+.error {
+  width: 100%;
+  display: block;
+  color: #dd3d34;
+  font-size: small;
+  visibility: hidden;
+}
+
+input[type="button"]:hover {
+  border-color: #fff;
+  box-shadow: 5px 5px 10px #7c7c7c;
+}
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
