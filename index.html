@@ -3,70 +3,59 @@
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
 <html lang="en"> 
 
-<head>
- 
+<head> 
   <meta charset="utf-8">
-
-  <title>Client</title>
-  
-  <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
-  <!-- <meta name="description" lang="en" content=""> -->
-  
-  <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
-  <!-- <meta name="keywords" lang="en" content=""> -->
-  
-  <!-- View-port Basics: http://mzl.la/VYREaP -->
-  <!-- This meta tag is used for mobile device to display the page without any zooming,
-       so how much the device is able to fit on the screen is what's shown initially. 
-       Remove comments from this tag, when you want to apply media queries to the website. -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
-  
-  <!-- To adhear no-cache for Chrome -->
-<!--   <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-store, no-cache" />
-  <meta http-equiv="Expires" content="0" /> -->
-
+  <title>ES6 | Course Form</title>   
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="favicon.ico" />
-
   <!--font-awesome link for icons-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
-
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
   <link rel="stylesheet" media="screen" href="assets/css/style.css" >
-
-  <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->	
-  <!--[if lt IE 9]>  
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
-  <![endif]-->
-
 </head>
 
 <body>
   <!--container start-->
   <div class="container">
-    <!--header section start-->
-    <header>
-      
-    </header>
-    <!--header section start-->
     <!--main section start-->
     <main>
-
+      <div class="wrapper">
+        <h1>get a free course</h1>
+        <form id="course_form">
+          <div class="form_input">
+            <div>
+              <span class="customer_icon">customer name</span>
+              <input id="name" type="text" name="name" placeholder="Customer Name">
+            </div>            
+            <span class="error">error message</span>
+          </div>
+          <div class="form_input">
+            <div>
+              <span class="course_icon">course</span>
+              <input id="course" type="text" name="course" placeholder="Course">
+            </div>            
+            <span class="error">error message</span>
+          </div>
+          <div class="form_input">
+            <div>
+              <span class="author_icon">author</span>
+              <input id="author" type="text" name="author" placeholder="Author">
+            </div>            
+            <span class="error">error message</span>
+          </div>
+          <div class="form_control">
+            <input id="submit" type="button" value="Submit">
+          </div>          
+         </form>
+      </div>
     </main>
     <!--main section end-->
 
     <!--footer section start-->
-    <footer>      
-
-    </footer>
-    <!--footer section end-->
-
   </div>
   <!--container end-->
 
-<!-- <script src="js/vendors/jquery-1.8.3.min.js"></script>
-<script src="assets/js/script.js"></script> -->
+<script src="assets/js/script.js"></script> 
 </body>
 </html>
